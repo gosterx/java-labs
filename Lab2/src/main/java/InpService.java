@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 class InpService {
-    Scanner s=new Scanner(System.in);
+    static Scanner s = new Scanner(System.in);
 
-    public String inputValueDouble(){
-        return s.nextLine();
+    public static double inputValueDouble(){
+        return s.nextDouble();
     }
 
 }

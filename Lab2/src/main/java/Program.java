@@ -1,42 +1,41 @@
 public class Program {
     public static void main(String[] args) {
-        InpService controlInp = new InpService();
-        PrService controlPr = new PrService();
         /*Задание 1*/
-        controlPr.printMsg("Enter mass: ");
-
-        ProgramOne task1 = new ProgramOne(Double.parseDouble(controlInp.inputValueDouble()));
-        controlPr.printMsg("Mass in grams: " +
-                task1.getWeightGram() +
+        PrService.printMsg("Enter mass: ");
+        double weight = InpService.inputValueDouble();
+        PrService.printMsg("Mass in grams: " +
+                weight +
                 "\nMass in kilos: " +
-                task1.weight());
+                ProgramOne.weightConventor(weight));
 
         /*Задание 2*/
-        controlPr.printMsg("\nEnter amount of bytes: ");
-        ProgramTwo task2 = new ProgramTwo(Integer.parseInt(controlInp.inputValueDouble()));
-        controlPr.printMsg("Size in bytes: " + task2.getSizeFileByte() +
-                "\nSize in kilobytes: " + task2.conversionOfKb() +
-                "\nSize in megabytes: " + task2.conversionOfMb());
+        PrService.printMsg("\nEnter amount of bytes: ");
+        double sizeFileByte = InpService.inputValueDouble();
+        PrService.printMsg("Size in bytes: " + sizeFileByte +
+                "\nSize in kilobytes: " + ProgramTwo.conversionOfKb(sizeFileByte) +
+                "\nSize in megabytes: " + ProgramTwo.conversionOfMb(sizeFileByte));
 
         /*Задание 3*/
-        controlPr.printMsg("\nEnter distance: ");
-        ProgramThree task3 = new ProgramThree(Integer.parseInt(controlInp.inputValueDouble()));
-        controlPr.printMsg("Distance in sm: " + task3.getDistance() +
-                "\nSize in m: " + task3.conversionOfMeters() +
-                "\nSize in km: " + task3.conversionOfKm());
+        PrService.printMsg("\nEnter distance: ");
+        double distance = InpService.inputValueDouble();
+        PrService.printMsg("Distance in sm: " + distance+
+                "\nSize in m: " + ProgramThree.conversionOfMeters(distance) +
+                "\nSize in km: " + ProgramThree.conversionOfKm(distance));
 
         /*Задание 4*/
-        Literals literalsTest = new Literals((Integer.parseInt(controlInp.inputValueDouble())), Integer.parseInt(controlInp.inputValueDouble()));
-        controlPr.printMsg(literalsTest.getVariableOne() +"\n"+
-                literalsTest.getVariableTwo());
-        literalsTest.swapLiterals();
-        controlPr.printMsg(literalsTest.getVariableOne() +"\n"+
-                literalsTest.getVariableTwo());
+        double a,b;
+        PrService.printMsg("\nEnter numbers:");
+        a= InpService.inputValueDouble();
+        b= InpService.inputValueDouble();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        PrService.printMsg("a: "+ a+"\nb: "+b);
 
         /*Задание 5*/
         Sweets gelatins = new Sweets(2, 18);
         Sweets sweets = new Sweets(2, 10.0);
-        controlPr.printMsg("\nPrice for kilos(sweets): " + sweets.priceSweetsOneKg() +
+        PrService.printMsg("\nPrice for kilos(sweets): " + sweets.priceSweetsOneKg() +
                 "\nPrice for kilos(gelatins): " + gelatins.priceSweetsOneKg() +
                 "\nPrice difference: " + gelatins.getPriceSweets() / sweets.getPriceSweets());
     }

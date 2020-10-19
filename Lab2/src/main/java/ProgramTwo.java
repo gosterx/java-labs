@@ -1,29 +1,11 @@
 class ProgramTwo {
-    private final int MEGABYTE_COEFFICIENT = 1024;
+    private static final int MEGABYTE_COEFFICIENT = 1024;
 
-    private int sizeFileByte;
-
-    ProgramTwo(int size) {
-        this.sizeFileByte = size;
+    public static  double conversionOfKb(double sizeFileByte) {
+        return sizeFileByte / MEGABYTE_COEFFICIENT;
     }
 
-    public void setSizeFileByte(int sizeFileByte) {
-        this.sizeFileByte = sizeFileByte;
+    public static double conversionOfMb(double sizeFileByte) {
+        return sizeFileByte / Math.pow(MEGABYTE_COEFFICIENT, 2);
     }
-
-    public int getSizeFileByte() {
-        return sizeFileByte;
-    }
-
-    public double conversionOfKb() {
-        return (double) this.sizeFileByte / MEGABYTE_COEFFICIENT;
-    }
-
-    public double conversionOfMb() {
-        return (double) this.sizeFileByte / Math.pow(MEGABYTE_COEFFICIENT, 2);
-    }
-
-
-
-
 }

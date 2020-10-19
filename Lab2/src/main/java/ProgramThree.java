@@ -1,25 +1,12 @@
 class ProgramThree {
+    private static  final double ONE_HUNDRED=100;
+    private static final double ONE_HUNDRED_THOUSAND= 100000;
 
-    private int distanceCm;
-
-    ProgramThree(int distance) {
-        this.distanceCm = distance;
+    public static double conversionOfMeters(double distanceCm) {
+        return distanceCm / ONE_HUNDRED;
     }
 
-    public void setDistance(int distance) {
-        this.distanceCm = distance;
+    public static double conversionOfKm(double distanceCm) {
+        return distanceCm / ONE_HUNDRED_THOUSAND;
     }
-
-    public int getDistance() {
-        return distanceCm;
-    }
-
-    public double conversionOfMeters() {
-        return (double) this.distanceCm / 100;
-    }
-
-    public double conversionOfKm() {
-        return (double) this.distanceCm / 100000;
-    }
-
 }

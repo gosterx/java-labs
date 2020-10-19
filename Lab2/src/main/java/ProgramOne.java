@@ -1,16 +1,7 @@
 class ProgramOne{
-    private double weightGram;
+    private final static double THOUSAND=1000;
 
-    ProgramOne(double weight){
-        this.weightGram = weight;
-    }
-    public double getWeightGram() {
-        return weightGram;
-    }
-    public void setWeightGram(double weight_gram) {
-        this.weightGram = weight_gram;
-    }
-    public double weight(){
-        return this.weightGram /1000;
+    public static double weightConventor(double weightGram){
+        return weightGram / THOUSAND;
     }
 }
