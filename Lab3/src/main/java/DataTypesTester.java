@@ -907,6 +907,28 @@ public class DataTypesTester {
         char a = '5', b = '2', c;
         System.out.println("\n***** Arithmetical Operators *****");
 
+        // addition
+        c = (char) (a + b);
+        System.out.printf("%c + %c = %c\n", a, b, c);
+        // subtraction
+        c = (char) (a - b);
+        System.out.printf("%c - %c = %c\n", a, b, c);
+        // multiplication
+        c = (char) (a * b);
+        System.out.printf("%c * %c = %c\n", a, b, c);
+        // division
+        c = (char) (a / b);
+        System.out.printf("%c / %c = %c\n", a, b, c);
+        c = (char) (a % b);
+        System.out.printf("%c %% %c = %c\n", a, b, c);
+
+        a = 5;
+        c = (char) -a;
+        System.out.printf("-%c = %c\n", a, c);
+
+        c = (char) +a;
+        System.out.printf("+%c = %c\n", a, c);
+
         a = 5;
         System.out.printf("++%c = %c\n", a, ++a);
 
