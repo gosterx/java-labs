@@ -11,10 +11,10 @@ public class Main {
         DragonModel model=new DragonModel();
         DragonView view =new DragonView();
         DragonController controller =new DragonController(model,view);
-        controller.apdateView();
+        controller.updateView();
         Scanner s=new Scanner(System.in);
         controller.numberYear(s.nextInt());
-        controller.apdateView();
+        controller.updateView();
     }
 
 }
