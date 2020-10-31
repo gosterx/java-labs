@@ -1,4 +1,4 @@
-package Task2;
+package genericClasses;
 
 public class PControl {
     public static void printMsg(String msg){

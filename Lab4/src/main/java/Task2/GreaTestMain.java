@@ -1,10 +1,13 @@
 package Task2;
 
+import genericClasses.IControl;
+import genericClasses.PControl;
+
 public class GreaTestMain {
     public static void main(String[] args) {
         PControl.printMsg("\n" +
                 "Enter the number of numbers: ");
-        int size= IControl.sizeNumberInput();
+        int size= IControl.NumberInput();
         double[] array =new double[size];
         PControl.printMsg("Enter numbers:\n");
         IControl.fillingTheArray(array);

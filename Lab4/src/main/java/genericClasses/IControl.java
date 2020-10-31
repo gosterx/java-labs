@@ -1,4 +1,4 @@
-package Task2;
+package genericClasses;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class IControl {
         }
     }
 
-    public static int sizeNumberInput(){
+    public static int NumberInput(){
         return s.nextInt();
     }
 
