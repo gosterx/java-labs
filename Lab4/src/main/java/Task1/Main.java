@@ -1,3 +1,5 @@
+package Task1;
+
 import Task1.Controller.DragonController;
 import Task1.Model.DragonModel;
 import Task1.View.DragonView;
