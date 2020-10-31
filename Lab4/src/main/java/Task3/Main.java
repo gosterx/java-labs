@@ -6,7 +6,7 @@ import genericClasses.PControl;
 public class Main {
     public static void main(String[] args) {
         PControl.printMsg("Enter 2 numbers: ");
-        if(WorkWithNumber.ParityStudy(IControl.NumberInput(),IControl.NumberInput()))
+        if(WorkWithNumber.ParityStudy(IControl.numberInput(),IControl.numberInput()))
         {
             PControl.printMsg("The number is a multiple of the sequence!");
         }
