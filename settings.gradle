@@ -1,4 +1,4 @@
-include ':Lab2', ':Lab3',':Lab4'
+include ':Lab2', ':Lab3',':Lab4', ':Lab5'
 rootProject.name = 'Labs_Java'
-
+include 'Lab5'
 
