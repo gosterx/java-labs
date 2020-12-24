@@ -1,0 +1,22 @@
+view/OutputService.java
+ view.OutputService
+view/InputService.java
+ view.InputService
+Main.java
+ Main
+view/InputDataForTasks.java
+ view.InputDataForTasks
+model/tasks/TaskB.java
+ model.tasks.TaskB
+model/tasks/TaskC.java
+ model.tasks.TaskC
+controllers/MainController.java
+ controllers.MainController
+model/base/Task.java
+ model.base.Task
+model/tasks/TaskA.java
+ model.tasks.TaskA
+model/tasks/TaskE.java
+ model.tasks.TaskE
+model/tasks/TaskD.java
+ model.tasks.TaskD
